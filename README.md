@@ -5,9 +5,10 @@
 * 
 > Draw tree
 ![](https://i.imgur.com/UX1BGAS.jpg)
-* 目前來看，除了 Remove bricks 主觀看起來效果不怎麼好，其餘的都補圖的還算正常跟合理
+* 可以把樹畫在天空，不像草可以排除天空的可能
 > Draw grass in the sky
 ![](https://i.imgur.com/zUgg0dh.png)
+* 不能把草畫在天空，但被畫的範圍有點綠綠的
 > Draw grass
 ![](https://i.imgur.com/6Tj57A7.png)
 > Draw brick
@@ -16,7 +17,7 @@
 ![](https://i.imgur.com/04Hozyq.png)
 > Remove door
 ![](https://i.imgur.com/6qZoC9Y.png)
-> It is impossible to generate grass in the sky and **the GAN know that**.
+＊ 主觀來看，除了generate tree的部分有些情況會有不合理的情況產生，其他generate跟remove的效果都不錯
 ---
 ## Dissect any GAN model and analyze what you find
 ### 1. layer1
