@@ -3,7 +3,57 @@
 ## Generate images with GANPaint
 
 ## Dissect any GAN model and analyze what you find
+### 1. layer1
+#### living room：
+![](https://imgur.com/3OTnaOq.png)
+#### bed room：
+![](https://imgur.com/EQCiuFc.png)
+#### 觀察：
+* 客廳
 
+    - 圈選出來的物件都很局部細微，看不太出來特別想學什麼類型的物件
+    - 
+
+* 臥室
+
+    - 圈選的物件以局部的床、枕頭居多
+    - 效果比 layer1 的客廳略好
+
+### 2. layer4
+#### living room：
+![](https://imgur.com/yaoQO35.png)
+
+#### bed room：
+![](https://imgur.com/6Wj5QfG.png)
+#### 觀察：
+* 客廳
+
+    - 有試圖縮小圈選範圍，但選取的效果不是到很好
+
+* 臥室
+
+    - 圈選的物件以床、枕頭、櫃子、窗戶居多
+    - 物件辨識的框種類繁多
+    - 效果比 layer1 好
+
+### 3. layer7
+#### living room：
+![](https://imgur.com/pK07WML.png)
+#### bed room：
+![](https://imgur.com/G9R0RB6.png)
+#### 觀察：
+* 客廳
+
+    - 能圈選出較細緻的家具
+
+* 臥室
+
+    - 圈選的物件仍以床、枕頭居多
+    - 但框出來的區域沒有很完整，反而都是大物件局部的區域
+    - 效果感覺比 layer4 的略差，但比 layer1 略好 
+
+
+---
 ## Compare with other method
 這裡就inpainting的部分，與[Globally and Locally Consistent Image Completion](http://iizuka.cs.tsukuba.ac.jp/projects/completion/en/)比較。
 
