@@ -1,8 +1,6 @@
 # homework3-GAN-Dissection
 
 ## Generate images with GANPaint
-* 
-* 
 > Draw tree
 ![](https://i.imgur.com/UX1BGAS.jpg)
 * 可以把樹畫在天空，不像草可以排除天空的可能
