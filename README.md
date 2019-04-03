@@ -52,9 +52,14 @@
 |-----------|-----------|-----------|-----------|
 |![](images/i1.png)|![](images/vm1.png)|![](images/od1.png)|![](images/oi1.png)|
 |![](images/i2.png)|![](images/vm2.png)|![](images/od2.png)|![](images/oi2.png)|
-|![](images/i3.png)|![](images/vm3.png)|![](images/od3.png)|![](images/oi3.png)|
 |![](images/i4.png)|![](images/vm4.png)|![](images/od4.png)|![](images/oi4.png)|
 
 可以看到siggraph2017_inpainting在有大範圍缺塊十處裡得非常糟糕，不過填補大範圍且沒有參考準也是一件莫名其妙的事就是了，當初訓練的目的就不是讓其發揮創造力的，穩定反而是主要考量點，雖然結果看起來也不是很穩定。  
 相較之下，gandissect只是在移除自己生成出來的東西，所以能夠大範圍地更換。不過也不容易將重要的內容移除及結構上的改變，可能只是替換成類似的，或是還有殘留。
 
+|Input|Mask|gandissect|siggraph2017_inpainting|
+|-----------|-----------|-----------|-----------|
+|![](images/i3.png)|![](images/vm3.png)|![](images/od3.png)|![](images/oi3.png)|
+|![](images/i5.png)|![](images/vm5.png)|![](images/od5.png)|![](images/oi5.png)|
+
+由上圖比較可知，siggraph2017_inpainting在小範圍的表現上是不差的，而且不會有移除不了的問題。
