@@ -3,12 +3,17 @@
 ## Generate images with GANPaint
 * 
 * 
-
+> Draw tree
 ![](https://i.imgur.com/UX1BGAS.jpg)
+>
 ![](https://i.imgur.com/zUgg0dh.png)
+>
 ![](https://i.imgur.com/6Tj57A7.png)
+>
 ![](https://i.imgur.com/7cgeqAj.png)
+>
 ![](https://i.imgur.com/04Hozyq.png)
+>
 ![](https://i.imgur.com/6qZoC9Y.png)
 > It is impossible to generate grass in the sky and **the GAN know that**.
 
