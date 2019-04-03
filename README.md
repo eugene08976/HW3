@@ -22,54 +22,25 @@
 ## Dissect any GAN model and analyze what you find
 ### 1. layer1
 #### living room：
-![](https://imgur.com/3OTnaOq.png)
+![](https://i.imgur.com/raticD4.png)
 #### bed room：
-![](https://imgur.com/EQCiuFc.png)
-#### 觀察：
-* 客廳
-
-    - 圈選出來的物件都很局部細微，看不太出來特別想學什麼類型的物件
-    - 
-
-* 臥室
-
-    - 圈選的物件以局部的床、枕頭居多
-    - 效果比 layer1 的客廳略好
-
+![](https://i.imgur.com/GE2Ywht.png)
+#### Observation：
+* 臥室效果比客廳好，可能是因為臥室圈選的物件以床、枕頭以及燈為主，而客廳都是圈選範圍太小，學習效果較差
 ### 2. layer4
 #### living room：
-![](https://imgur.com/yaoQO35.png)
-
+![](https://i.imgur.com/k4bsjja.png)
 #### bed room：
-![](https://imgur.com/6Wj5QfG.png)
-#### 觀察：
-* 客廳
-
-    - 有試圖縮小圈選範圍，但選取的效果不是到很好
-
-* 臥室
-
-    - 圈選的物件以床、枕頭、櫃子、窗戶居多
-    - 物件辨識的框種類繁多
-    - 效果比 layer1 好
-
+![](https://i.imgur.com/5kxuGun.png)
+#### Observation：
+* 客廳的圈選範圍還是太小，雖比layer1大，但仍然無法學到途中完整的物件，臥室除了layer1有圈選到的物件以外多了窗戶與衣櫃，辨識的物件更多元
 ### 3. layer7
 #### living room：
-![](https://imgur.com/pK07WML.png)
+![](https://i.imgur.com/B5oBR2O.png)
 #### bed room：
-![](https://imgur.com/G9R0RB6.png)
-#### 觀察：
-* 客廳
-
-    - 能圈選出較細緻的家具
-
-* 臥室
-
-    - 圈選的物件仍以床、枕頭居多
-    - 但框出來的區域沒有很完整，反而都是大物件局部的區域
-    - 效果感覺比 layer4 的略差，但比 layer1 略好 
-
-
+![](https://i.imgur.com/SHsjrer.png)
+#### Observation：
+* 客廳能圈選出圖中較小較細節的物件，臥室圈選的以大物件為主，雖然是layer7但感覺效果不是最好的
 ---
 ## Compare with other method
 這裡就inpainting的部分，與[Globally and Locally Consistent Image Completion](http://iizuka.cs.tsukuba.ac.jp/projects/completion/en/)比較。
