@@ -72,7 +72,7 @@
 
 ### Discussion and Conclution
 
-siggraph2017_inpainting在修補GAN生成的影像時，明顯表現得較差，表示兩者有明顯的差別。而其中小範圍修補比大範圍修補表現要好，也呼應當初network的設計，被擾亂的是global的物品辨識與完整的功能，而非local的填補功能。local的填補應該能複製任何形式的local pattern而不被影響。  
+siggraph2017_inpainting在修補GAN生成的影像時，明顯表現得較差，表示兩者有明顯的差別。而其中小範圍修補比大範圍修補表現要好，也呼應當初network的設計，被擾亂的主要是global的物品辨識與完整的功能，而非local的填補功能。local的填補應該能複製任何形式的local pattern而不被影響。  
 在這次比較中可以看到，GAN的影像在生成之後，可能難以套用既有的後處理方法，甚至使用一樣有GAN技術來訓練的mode來做後處理也會有巨大的落差。
 
 
