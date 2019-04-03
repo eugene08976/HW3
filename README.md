@@ -63,3 +63,9 @@
 |![](images/i5.png)|![](images/vm5.png)|![](images/od5.png)|![](images/oi5.png)|
 
 由上圖比較可知，siggraph2017_inpainting在小範圍的表現上是不差的，而且不會有移除不了的問題。
+
+|Input|Mask|siggraph2017_inpainting|
+|-----------|-----------|-----------|
+|<img src="images/ir.png" width="256" height="256">|<img src="images/vmr.png" width="256" height="256">|<img src="images/or.png" width="256" height="256">|
+
+上圖為siggraph2017_inpainting套用在真實影像，而非GAN生成影像的結果。由於siggraph2017_inpainting在training的過程中是使用真實的影像，因此可見在真實影像上的表現好非常多，雖然風格還不是很一致，但穩定很多。有此可見GAN生成出的影像雖然看起來很像真的，但對CNN model來講還是有明顯的差異。
