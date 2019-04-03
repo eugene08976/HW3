@@ -41,8 +41,20 @@
 * 客廳能圈選出圖中較小較細節的物件，臥室圈選的以大物件為主，雖然是layer7但感覺效果不是最好的
 ---
 ## Compare with other method
-這裡就inpainting的部分，與[Globally and Locally Consistent Image Completion](http://iizuka.cs.tsukuba.ac.jp/projects/completion/en/)比較。
+這裡就inpainting的部分，與[Globally and Locally Consistent Image Completion](http://iizuka.cs.tsukuba.ac.jp/projects/completion/en/)(以下簡稱siggraph2017_inpainting)比較。
 
 ### Method
 ![](http://iizuka.cs.tsukuba.ac.jp/projects/completion/images/model_v2.png)
 如上圖所示，這個方法使用了三個networks，其中completion network是用來產生完整的圖片的，global和local discriminator則是幫助訓練。global discriminator能看到整張圖片，幫助達成整個圖片的連貫，local discriminator則只會看到一部份的input圖片，讓局部區域能夠一致。在訓練過程中，除了來自兩個discriminators的GAN loss以外，還加上了和原圖比較的MSE loss，讓model更加穩定。最後，對輸出的圖片有使用簡單的後處理，調整補上部分的顏色符合其四周的顏色。
+### Compare
+
+|Input|Mask|gandissect|siggraph2017_inpainting|
+|-----------|-----------|-----------|-----------|
+|![](images/i1.png)|![](images/vm1.png)|![](images/od1.png)|![](images/oi1.png)|
+|![](images/i2.png)|![](images/vm2.png)|![](images/od2.png)|![](images/oi2.png)|
+|![](images/i3.png)|![](images/vm3.png)|![](images/od3.png)|![](images/oi3.png)|
+|![](images/i4.png)|![](images/vm4.png)|![](images/od4.png)|![](images/oi4.png)|
+
+可以看到siggraph2017_inpainting在有大範圍缺塊十處裡得非常糟糕，不過填補大範圍且沒有參考準也是一件莫名其妙的事就是了，當初訓練的目的就不是讓其發揮創造力的，穩定反而是主要考量點，雖然結果看起來也不是很穩定。
+相較之下，gandissect只是在移除自己生成出來的東西，所以能夠大範圍地更換。不過也不容易將重要的內容移除，可能只是替換成類似的，或是還有殘留。
+
